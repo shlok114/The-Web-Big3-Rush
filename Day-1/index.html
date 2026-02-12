@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+</head>
+
+<body>
+    <header>
+    <nav>
+        <a href="#intro">Home</a>
+        <a href="#img">Image</a>
+        <a href="#articles">Article</a>
+        <a href="#link">Link</a>
+        <a href="#list">List</a>
+        <a href="#tables">Table</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    </header>
+
+    <section id = "intro">
+        <h1>This is a pure HTML page!</h1>
+         <hr>
+        <p>No CSS</p>
+        <p>No Style</p>
+        <p>Just Simplicity!</p>
+        <p>Lots of whitespace</p>
+    </section>
+
+     
+    <!-- Image -->
+    <section id = "img">
+        <h4>Image</h4>
+        <img src="https://plus.unsplash.com/premium_photo-1673001563534-88f2b9406fbd?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2ltcGxlJTIwcGhvdG98ZW58MHx8MHx8fDA%3D" alt="nothing" width="20%">
+    </section>
+    
+     
+    <!-- Some semantic tag - article -->
+    <section id = "articles">
+        <article>
+            <p>Main content...</p>
+            
+            <aside>
+                <h3>Related Info</h3>
+                <p>This tangential content fits here.</p>
+            </aside>
+
+            <p>More main content...</p>
+        </article>
+    </section>
+
+    <!-- Links -->
+    <section id ="link">
+        <h4>Links</h4>
+        <p>Normal Link</p>
+        <p>google: <a href="https://www.google.com/" target="_blank">Google!</a></p>
+         
+        <p>Link to image (Click image)</p>
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhCH5-in_dqv629DKigoHp7vyRZzOQrezE3w&s" alt="">
+        </a>
+    </section>
+
+    <!-- List -->
+    <section id = "list">
+        <h4>Lists</h4>
+
+        <p>Ordered list</p>
+        <ol type="A">
+            <li>Apple</li>
+            <li>Ball</li>
+            <li>Cat</li>
+            <li>Dog</li>
+        </ol>
+
+        <p>Unordered List</p>
+        <ul type="square">
+            <li>Namaste</li>
+            <li>Hello</li>
+            <li>Hola</li>
+            <li>Konnichiwa</li>
+        </ul>
+    </section>
+
+    <!-- Tables -->
+    <section id = "tables">
+            <h4>Tables</h4>
+        <table border="1">
+            <tr>
+                <th>Country</th>
+                <th>Leader</th>
+            </tr>
+            <tr>
+                <td>America</td>
+                <td>Trump</td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td>Modi</td>
+            </tr>
+            <tr>
+                <td>Russia</td>
+                <td>Putin</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Form -->
+    <section id = "contact">
+        <h3>Contact Form!!</h3>
+
+        <form>
+            <label for="fname">firstname: </label>
+            <input type="text" id="fname" placeholder="Please enter fast" required>
+          
+            <label for="lname">lastname: </label>
+            <input type="text" id="lname" placeholder="Your Surname*">
+              
+            <label for="bdate">Birthdate: </label>
+            <input type="date" id="bdate" required>
+              
+            <label for="emailId">Email: </label>
+            <input type="email" id="emailId">
+
+            <label for="mobile">Phone no: </label>
+            <input type="tel" id="mobile">
+              
+            <label for="num">Favourite Number: </label>
+            <input type="number" id="num">
+
+            <fieldset>
+                <legend>Select the tiltle</legend>
+                 
+                <label for="Mr.">Mr.</label>
+                <input type="radio" name="title" id="Mr." value="Mr.">
+                 
+                <label for="Mrs.">Mrs.</label>
+                <input type="radio" name="title" id="Mrs." value="Mrs.">
+                 
+                <label for="PhD.">PhD.</label>
+                <input type="radio" name="title" id="PhD." value="PhD.">
+            </fieldset>        
+              
+            <label for="fruit">Select a fruit: </label>
+            <select name="fruits" id="fruit">
+                <option value="select">select</option>
+                <option value="mango">mango</option>
+                <option value="apple">apple</option>
+                <option value="banana">banana</option>
+            </select>
+
+            <label for="check">Checkbox: </label>
+            <input type="checkbox" id="check">
+              
+            <input type="reset">
+            <input type="submit">
+        </form>
+    </section>
+
+  
+    <footer>
+        <h4>Thank you!</h4>
+        <h6>End of the page</h6>
+    </footer>
+    
+</body>
+</html>
