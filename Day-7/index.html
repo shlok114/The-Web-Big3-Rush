@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Profile Card</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>GitHub Profile Card</h1>
+
+    <div class="search-box">
+      <input type="text" id="usernameInput" placeholder="Enter GitHub username..."/>
+      <button id="searchBtn">
+        Search
+      </button>
+    </div>
+
+    <!-- Card -->
+    <div class="profile-card hidden" id="profileCard">
+
+      <img
+        id="avatar"
+        src=""
+        alt="Profile Avatar"
+      />
+
+      <div class="profile-info">
+
+        <h2 id="name">Name</h2>
+
+        <p id="bio">
+          Bio goes here...
+        </p>
+
+        <div class="stats">
+
+          <div class="stat">
+            <h3 id="followers">0</h3>
+            <span>Followers</span>
+          </div>
+
+          <div class="stat">
+            <h3 id="following">0</h3>
+            <span>Following</span>
+          </div>
+
+          <div class="stat">
+            <h3 id="repos">0</h3>
+            <span>Repos</span>
+          </div>
+
+        </div>
+
+        <a
+          id="profileLink"
+          href="#"
+          target="_blank"
+        >
+          View Profile
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Error -->
+    <p class="error hidden" id="errorMessage">
+      User not found.
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
