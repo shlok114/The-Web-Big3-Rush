@@ -38,6 +38,8 @@ addBtn.addEventListener('click', () => {
     notes.push(input.value)
 
     localStorage.setItem('notes', JSON.stringify(notes))
+
+    input.value = ""
 })
 
 container.addEventListener('click', () => {
