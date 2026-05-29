@@ -43,7 +43,7 @@ const fetchData = async (username) => {
     }
 }
 
-btn.addEventListener('click', ()=>{
+function handleSubmission(){
     const username = input.value
 
     if(username == ""){
@@ -52,4 +52,13 @@ btn.addEventListener('click', ()=>{
         return
     }
     fetchData(username)
+}
+
+btn.addEventListener('click', handleSubmission)
+
+input.addEventListener('keydown', (event)=>{
+    if(event.key == 'Enter'){
+        handleSubmission()
+    }
 })
+
