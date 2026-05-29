@@ -15,6 +15,27 @@ const fetchData = async (username) => {
             err_msg.classList.remove('hidden')
         }else{
             card.classList.remove('hidden')
+
+            const img = document.getElementById('avatar')
+            img.src = data.avatar_url
+
+            const name = document.getElementById('name')
+            name.textContent = data.name || "No Name available"
+
+            const bio = document.getElementById('bio')
+            bio.textContent = data.bio || "No Bio available"
+
+            const followers = document.getElementById('followers')
+            followers.textContent = data.followers
+
+            const following = document.getElementById('following')
+            following.textContent = data.following
+
+            const repos = document.getElementById('repos')
+            repos.textContent = data.public_repos
+
+            const profileLink = document.getElementById('profileLink')
+            profileLink.href = data.html_url
         }
 
     } catch (error) {
@@ -24,5 +45,11 @@ const fetchData = async (username) => {
 
 btn.addEventListener('click', ()=>{
     const username = input.value
+
+    if(username == ""){
+        err_msg.classList.remove('hidden')
+        err_msg.textContent = "Please enter a username"
+        return
+    }
     fetchData(username)
 })
